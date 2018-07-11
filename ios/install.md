@@ -7,11 +7,13 @@ To install with CocoaPods, add the following to your `Podfile`:
 ```
   # Flexbox Layout Manager Used By React Natve
   pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga/Yoga.podspec'
+  pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
   # React Native
   pod 'React', path: '../node_modules/react-native', subspecs: [
     # Comment out any unneeded subspecs to reduce bundle size.
     'Core',
+    'CxxBridge', 
     'DevSupport',
     'RCTActionSheet',
     'RCTAnimation',
